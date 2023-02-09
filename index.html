@@ -5,40 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeliciousHome</title>
-    <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header>
-        <div class="wrapper h1flex">
+        <div class="mainHeader">
             <h1>Delicious</h1>
+            <nav> 
+                <ul class="homebar">
+                    <li><a href="Home.asp">Home</a></li>
+                    <li><a href="About.asp">About</a></li>
+                    <li><a href="Recipes.asp">Recipes</a></li>
+                    <li><a href="Nutrition.asp">Nutrition</a></li>
+                    <li><a href="Blog.asp">Blog</a></li>
+                    <li><a href="Shop.asp">Shop</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    
     </header>
     <main>
-        <section class="popularrecipes">
-            <h2>Popular Recipes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi placeat iste porro fugiat repudiandae ipsum esse nemo impedit deleniti illum soluta assumenda consectetur optio beatae non quaerat, blanditiis exercitationem!</p>
-            <button type="button">VIEW RECIPES</button>
-        </section>
-        <section class="menu">
-            <ul class="wrapper menuflex">
-                <li>Vegetarian</li>
-                <li>Appetizers</li>
-                <li>Desserts</li>
-                <li>Drinks</li>
-                <li>Salads</li>
-                <li>Side Dishes</li>
-            </ul>
+        <section class="recipemenu">
+            <article>
+                <h2>Popular Recipes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi placeat iste porro fugiat repudiandae ipsum esse nemo impedit deleniti illum soluta assumenda consectetur optio beatae non quaerat, blanditiis exercitationem!</p>
+                <button type="button">VIEW RECIPES</button>
+            </article>
+                
+            <figure>
+                <img src="./assets/home-2.jpeg">
+            </figure>
+            <figure>
+                <img src="./assets/home-3.jpeg">
+            </figure>
+            <article class="menuflexboard">
+                <ul class="menuflex">
+                    <li>
+                        <h2>Vegetarian </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <h2>Appetizers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <h2>Desserts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <h2>Drinks</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <h2>Salads</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, accusamus?</p>
+                
+                    </li>
+                    <li>
+                        <h2>Side Dishes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, suscipit.</p>
+                    </li>
+                </ul>
+            </article>
         </section>
 
         <section class="restauraunts">
-            <div class="wrapper">
-                <h2>Our Restauraunts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a rerum magni odit atque hic voluptas explicabo molestias velit?</p>
-            </div>
+            <figure class="wrapper">
+                <img src="./assets/home-4.jpeg">
+            </figure>
+            <h2>Our Restauraunts</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a rerum magni odit atque hic voluptas explicabo molestias velit?</p>
         </section>
 
         <section class="gallery">
-            <ul class="gallery gallerflex">
+            <ul>
                 <li><img src="./assets/home-5.jpeg"></li>
                 <li><img src="./assets/home-6.jpeg"></li>
                 <li><img src="./assets/home-7.jpeg"></li>
@@ -56,7 +97,43 @@
             </div>
         </section>
     </main>
-    </header>
+    <footer>
+        <div class="footerboard">
+            <div class="listtitle1">
+                <h3>DELICIOUS</h3>
+                <ul class="deliciouslist" >
+                    <li>Soko raddichio bunya nuts gram dulse</li>
+                    <li>silver beet parsnip napa cabbage lotus</li>
+                    <li> root sea leetuce brussels sprout cabbage </li>
+                    <li>A delicious restaurant
+                        Toronto, Ontario </li>
+                    <li>yum@food.com</li>
+                    <li>+1 234 567 8910</li>
+                </ul>
+            </div>
+
+            <div class="listtitle2">
+                <ul lass="recentposts">
+                    <h3>Recent Posts</h3>
+                    <li>Beetroot water spinach okra water</li>
+                    <li>Chestnut ricebean pea catsear courgette</li>
+                    <li>Summer purslane spinach arugula pea</li>
+                    <li>Tatsoi aubergine spring onion bush</li>
+                    <li>Tomato kale raddichio turnip chicory</li>
+                    <li>Salsify pea sprouts fava bean</li>
+                </ul>
+            </div>
+            
+                <form>
+
+                </form>
+            
+        
+        </div>
+        <div class="copyright">
+            <h4>Copyrights @2015 by POLAR. All Rights Reserved</h4>
+        </div>
+    </footer>
     
 </body>
 </html>
