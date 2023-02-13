@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeliciousHome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="mainHeader">
+    <header class="homeheader">
+        <div class="mainheader">
             <h1>Delicious</h1>
             <nav> 
                 <ul class="homebar">
@@ -27,8 +30,9 @@
     </header>
     <main>
         <section class="recipemenu">
-            <article>
+            <article class="popularrecipe">
                 <h2>Popular Recipes</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi placeat iste porro fugiat repudiandae ipsum esse nemo impedit deleniti illum soluta assumenda consectetur optio beatae non quaerat, blanditiis exercitationem!</p>
                 <button type="button">VIEW RECIPES</button>
             </article>
@@ -73,12 +77,17 @@
         <section class="restauraunts">
             <figure class="wrapper">
                 <img src="./assets/home-4.jpeg">
+                <figure class="homecircletext">
+                    <img src="./assets/home-circle-text.png">
+                </figure>
             </figure>
+
             <h2>Our Restauraunts</h2>
+            <hr>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a rerum magni odit atque hic voluptas explicabo molestias velit?</p>
         </section>
 
-        <section class="gallery">
+        <section class="homegallery">
             <ul>
                 <li><img src="./assets/home-5.jpeg"></li>
                 <li><img src="./assets/home-6.jpeg"></li>
@@ -91,8 +100,10 @@
 
         
         <section class="hungryclients">
+            <!-- set a min-height and font awesome icons -->
             <div class="wrapper">
                 <h2>Hungry Clients</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut nesciunt quidem perferendis, atque necessitatibus, obcaecati cupiditate voluptate fuga architecto officiis? Esse vitae illum aliquid assumenda itaque excepturi officiis nemo!</p>
             </div>
         </section>
@@ -102,10 +113,10 @@
             <div class="listtitle1">
                 <h3>DELICIOUS</h3>
                 <ul class="deliciouslist" >
-                    <li>Soko raddichio bunya nuts gram dulse</li>
-                    <li>silver beet parsnip napa cabbage lotus</li>
-                    <li> root sea leetuce brussels sprout cabbage </li>
-                    <li>A delicious restaurant
+                    <li>
+                        Soko raddichio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage 
+                    </li>
+                    <li>A delicious restaurant <br>
                         Toronto, Ontario </li>
                     <li>yum@food.com</li>
                     <li>+1 234 567 8910</li>
@@ -113,21 +124,25 @@
             </div>
 
             <div class="listtitle2">
-                <ul lass="recentposts">
+                <ul class="recentposts">
                     <h3>Recent Posts</h3>
-                    <li>Beetroot water spinach okra water</li>
-                    <li>Chestnut ricebean pea catsear courgette</li>
-                    <li>Summer purslane spinach arugula pea</li>
-                    <li>Tatsoi aubergine spring onion bush</li>
-                    <li>Tomato kale raddichio turnip chicory</li>
-                    <li>Salsify pea sprouts fava bean</li>
+                    <li><a href="beetroot.asp">Beetroot water spinach okra water</a></li>
+                    <li><a href="chestnut.asp">Chestnut ricebean pea catsear courgette</a></li>
+                    <li><a href="summer.asp">Summer purslane spinach arugula pea</a></li>
+                    <li><a href="tatsoi.asp">Tatsoi aubergine spring onion bush</a></li>
+                    <li><a href="tomato.asp">Tomato kale raddichio turnip chicory</a></li>
+                    <li><a href="Salsify.asp">Salsify pea sprouts fava bean</a></li>
                 </ul>
             </div>
             
+            <div class="subscribe">
+                <h3>Subscribe Now</h3>
                 <form>
-
+                    <label for="email">Get all of our newest recipes immeditely <br> in your inbox</label><br><br><br>
+                    <input type="text" id="email" placeholder="Enter your email"></input>
+                    </label>
                 </form>
-            
+            </div> 
         
         </div>
         <div class="copyright">

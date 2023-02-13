@@ -1,0 +1,77 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.footerboard {
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .listtitle1 {
+        width: 30%;
+        h3 {
+            color: greenyellow;
+
+        }
+
+        .deliciouslist {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            a {
+                color: white;
+            }
+            a:hover {
+                color: limegreen;
+            }
+            li {
+                padding: 20px 0;
+                border-bottom: 4px solid #9999;
+              
+            }
+        }
+    }
+
+    .listittle2 {
+        width: 30%;
+
+    }
+        .recentposts {
+            display: flex;
+            flex-flow: column wrap;
+            a {
+                color: white;
+            }
+            a:hover {
+                color: limegreen;
+            }
+            li {
+               padding: 20px 0;
+               border-bottom: 4px solid #9999;
+            }
+        
+        }
+
+}
+
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: grey;
+}
+
+
+
+.subscribe form {
+    padding-bottom: 10%;
+    border-bottom: 4px solid grey; 
+}
