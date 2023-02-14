@@ -5,6 +5,82 @@
     width: 100%;
 }
 
+.recipemenu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
+    
+
+    .popularrecipe {
+        
+        display: flex;
+        width: 50%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+        p {
+            width: 70%;
+            font-family: 'Lora', serif;
+        }
+        button {
+            color: white;
+            background:green;
+            padding: 2%;
+            border:none;
+            margin-bottom: 15px;
+        }
+      
+    }
+    figure {
+       
+        justify-content: center;
+        width: 50%;
+
+    }
+}
+
+
+.menuflexboard{
+    background-color:#E0E0E0;
+    display: flex;
+    width: 50%;
+    
+    justify-content: center;
+
+    .menuflex {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 70%;
+        align-items: center;
+        align-content: center;
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+        p {
+            font-family: 'Lora', serif;
+        }
+
+        li {
+            width: 50%;
+            display: flex;
+            min-width: 150px;
+            i {
+                padding-right: 3%;
+                padding-top: 3%;
+            }
+        }
+    }
+}
+
+
 .restauraunts {
     background-color: white;
     height: 100%;
@@ -14,6 +90,13 @@
     flex-flow: column wrap;
     text-align: center;
     margin: 10% 0;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    p {
+        font-family: 'Lora', serif;
+    }
     
     .wrapper {
         display: flex;
@@ -37,54 +120,6 @@
 
 
 
-.recipemenu {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    
-
-    .popularrecipe {
-        display: flex;
-        width: 50%;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-      
-    }
-    figure {
-       
-        justify-content: center;
-        width: 50%;
-
-    }
-}
-
-
-
-.menuflexboard{
-    background-color: #ECEFF1;
-    display: flex;
-    width: 50%;
-    
-    justify-content: center;
-
-    .menuflex {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        width: 70%;
-        align-items: center;
-        align-content: center;
-
-        li {
-            width: 50%;
-
-        }
-    }
-}
 
 
 
@@ -109,11 +144,35 @@
     text-align: center;
     padding: 6% 0;
 
+    
+
     .wrapper {
         display: flex;
         flex-flow: column wrap;
         width: 50%;
         height: 100%;
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+        .quotebox {
+            display: flex;
+            width: 100%;
+            color:#F5F5F5;
+            p {
+                font-family: 'Lora', serif;
+                color: black;
+            }
+        }
+    .arrows {
+        padding-top: 10px;
+        color: #F5F5F5
+        }
     }
  
 }
+
+.iconlist {
+    display: flex;
+    width: 100%;
+    color: white;
+    }

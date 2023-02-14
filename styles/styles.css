@@ -226,57 +226,6 @@ html {
   overflow: hidden;
 }
 
-header {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-}
-
-.mainheader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 2%;
-  font-family: "Raleway", sans-serif;
-}
-
-.homebar {
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.homeheader {
-  background-image: url(../assets/home-1.jpeg);
-  height: 100vh;
-  padding-top: 0.5%;
-}
-
-.blogheader {
-  background-image: url(../assets/blog-1.jpeg);
-  height: 50vh;
-  padding-top: 0.5%;
-}
-
-.contactheader {
-  height: 50vh;
-  background-image: url(../assets/contact-1.jpeg);
-  padding-top: 0.5%;
-}
-
-.navicon {
-  display: none;
-}
-
 body {
   max-width: 1920px;
   font-size: 125%;
@@ -318,6 +267,14 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
 h4 {
   color: white;
   display: -webkit-box;
@@ -334,6 +291,60 @@ hr {
   width: 60px;
 }
 
+header {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+.mainheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2%;
+  font-family: "Raleway", sans-serif;
+}
+.mainheader h1 {
+  font-size: 40px;
+}
+
+.homebar {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeheader {
+  background-image: url(../assets/home-1.jpeg);
+  height: 100vh;
+  padding-top: 0.5%;
+}
+
+.blogheader {
+  background-image: url(../assets/blog-1.jpeg);
+  height: 50vh;
+  padding-top: 0.5%;
+}
+
+.contactheader {
+  height: 50vh;
+  background-image: url(../assets/contact-1.jpeg);
+  padding-top: 0.5%;
+}
+
+.navicon {
+  display: none;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,50 +352,6 @@ hr {
   margin: 0 auto;
   max-width: 1920px;
   width: 100%;
-}
-
-.restauraunts {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  text-align: center;
-  margin: 10% 0;
-}
-.restauraunts .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  width: 30%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  padding-bottom: 80px;
-}
-.restauraunts .homecircletext {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  top: -100px;
-  right: -100px;
 }
 
 .recipemenu {
@@ -415,6 +382,20 @@ hr {
           align-items: center;
   text-align: center;
 }
+.recipemenu .popularrecipe h2 {
+  font-family: "Raleway", sans-serif;
+}
+.recipemenu .popularrecipe p {
+  width: 70%;
+  font-family: "Lora", serif;
+}
+.recipemenu .popularrecipe button {
+  color: white;
+  background: green;
+  padding: 2%;
+  border: none;
+  margin-bottom: 15px;
+}
 .recipemenu figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -423,7 +404,7 @@ hr {
 }
 
 .menuflexboard {
-  background-color: #ECEFF1;
+  background-color: #E0E0E0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,8 +431,72 @@ hr {
   -ms-flex-line-pack: center;
       align-content: center;
 }
+.menuflexboard .menuflex h2 {
+  font-family: "Raleway", sans-serif;
+}
+.menuflexboard .menuflex p {
+  font-family: "Lora", serif;
+}
 .menuflexboard .menuflex li {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 150px;
+}
+.menuflexboard .menuflex li i {
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.restauraunts {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+  margin: 10% 0;
+}
+.restauraunts h2 {
+  font-family: "Raleway", sans-serif;
+}
+.restauraunts p {
+  font-family: "Lora", serif;
+}
+.restauraunts .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-bottom: 80px;
+}
+.restauraunts .homecircletext {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: -100px;
+  right: -100px;
 }
 
 .homegallery {
@@ -488,6 +533,32 @@ hr {
   width: 50%;
   height: 100%;
 }
+.hungryclients .wrapper h2 {
+  font-family: "Raleway", sans-serif;
+}
+.hungryclients .wrapper .quotebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #F5F5F5;
+}
+.hungryclients .wrapper .quotebox p {
+  font-family: "Lora", serif;
+  color: black;
+}
+.hungryclients .wrapper .arrows {
+  padding-top: 10px;
+  color: #F5F5F5;
+}
+
+.iconlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: white;
+}
 
 .pineapplechickenboard {
   height: 100%;
@@ -511,15 +582,59 @@ hr {
           flex-flow: row wrap;
   margin: 0 auto;
   border-bottom: 2px solid #EEEEEE;
+  font-family: "Lora", serif;
 }
 
 .pineappleh2 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.pineappleh2 h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
 
 h2, h5 {
   margin: 0;
+}
+
+.tagsandshare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 70%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #EEEEEE;
+}
+.tagsandshare p {
+  width: 90%;
+  padding-left: 10px;
+}
+.tagsandshare .iconlist2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 20px;
+  padding-left: 20px;
+  color: grey;
+}
+.tagsandshare .iconlist2 a {
+  color: grey;
 }
 
 .meetsallylucas {
@@ -533,8 +648,8 @@ h2, h5 {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-top: 35px;
 }
 .meetsallylucas .sallypic {
   display: -webkit-box;
@@ -549,7 +664,7 @@ h2, h5 {
   width: 100%;
   margin-left: 2%;
   background-color: #E0E0E0;
-  padding-top: 15px;
+  padding-top: 35px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -560,6 +675,10 @@ h2, h5 {
   margin: 0 auto;
   border-top: 2px solid #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
+}
+.bloggalleryboard h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .bloggalleryboard ul {
   display: -webkit-box;
@@ -602,6 +721,8 @@ h2, h5 {
 }
 .commentsboard h3 {
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +743,7 @@ h2, h5 {
           justify-content: space-between;
 }
 .commentsboard .silver {
-  width: 10%;
+  width: 9%;
   height: 50%;
 }
 .commentsboard .comments {
@@ -636,7 +757,7 @@ h2, h5 {
   padding-right: 30px;
 }
 .commentsboard .brunette {
-  width: 10%;
+  width: 9%;
   height: 50%;
 }
 .commentsboard .hudson {
@@ -658,10 +779,6 @@ h2, h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-}
-.commentsboard .leavecomment h3 {
-  width: 100%;
   margin: 0;
 }
 .commentsboard .leavecomment h5 {
@@ -700,10 +817,7 @@ h2, h5 {
   width: 100%;
   margin: 0 auto;
 }
-.dropcontact div {
-  width: 60%;
-}
-.dropcontact h2 .dropus {
+.dropcontact .dropus {
   margin: 0 auto;
   width: 60%;
   display: -webkit-box;
@@ -719,12 +833,45 @@ h2, h5 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-right: 20px;
 }
-.dropcontact h2 .dropus form {
+.dropcontact .dropus form {
+  margin-bottom: 20px;
   width: 60%;
 }
-.dropcontact h2 .dropus h2 {
-  text-align: left;
+.dropcontact .dropus form button {
+  color: green;
+  background-color: white;
+  border: none;
+}
+.dropcontact .dropus .upper {
+  width: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background-color: #F5F5F5;
+  border: none;
+  padding: 2%;
+}
+.dropcontact .dropus .middle {
+  width: 100%;
+  margin-bottom: 4%;
+  background-color: #F5F5F5;
+  border: none;
+  padding: 2%;
+}
+.dropcontact .dropus .lower {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  padding: 2%;
+  border: none;
+  background-color: #F5F5F5;
+  color: black;
+}
+.dropcontact .dropus h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60%;
 }
 .dropcontact .contactboard {
@@ -768,18 +915,21 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 85%;
+  width: 70%;
   color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .footerboard .listtitle1 {
   width: 30%;
 }
 .footerboard .listtitle1 h3 {
   color: greenyellow;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
 }
 .footerboard .listtitle1 .deliciouslist {
   display: -webkit-box;
@@ -792,9 +942,10 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: grey;
 }
 .footerboard .listtitle1 .deliciouslist a {
-  color: white;
+  color: grey;
 }
 .footerboard .listtitle1 .deliciouslist a:hover {
   color: limegreen;
@@ -816,7 +967,7 @@ footer {
           flex-flow: column wrap;
 }
 .footerboard .recentposts a {
-  color: white;
+  color: grey;
 }
 .footerboard .recentposts a:hover {
   color: limegreen;
@@ -844,12 +995,32 @@ footer {
   border-bottom: 4px solid grey;
 }
 
+.subscribe {
+  color: grey;
+  width: 20%;
+}
+.subscribe h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.subscribe form .footeremail {
+  width: 85%;
+  padding: 10px;
+}
+.subscribe form .subscribebutton {
+  color: white;
+  background: green;
+  border: none;
+}
+
 @media (max-width: 960px) {
   .homeheader {
     height: 50vh;
   }
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 636px) {
@@ -875,8 +1046,21 @@ footer {
   .footerboard .listtitle2 {
     width: 100%;
   }
+  .footerboard .subscribe {
+    width: 100%;
+  }
+  .footerboard .subscribe form .footeremail {
+    width: 50%;
+  }
 }
 @media (max-width: 320px) {
+  .recipemenu figure {
+    min-width: 320px;
+  }
+  .homecircletext {
+    height: 100px;
+    width: 100px;
+  }
   .homeheader {
     height: 40vh;
   }
@@ -885,5 +1069,14 @@ footer {
   }
   .navicon {
     display: inline-block;
+  }
+  .menuflexboard {
+    width: 100%;
+  }
+  .menuflexboard .menuflex li {
+    width: 100%;
+  }
+  .pineapplechickenboard {
+    font-size: 0.7rem;
   }
 }

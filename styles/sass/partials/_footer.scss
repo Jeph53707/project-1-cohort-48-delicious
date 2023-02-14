@@ -9,15 +9,18 @@ footer {
 .footerboard {
     display: flex;
     margin: 0 auto;
-    width: 85%;
+    width: 70%;
     color: white;
     justify-content: space-between;
     padding-bottom: 50px;
+    padding-top: 50px;
 
     .listtitle1 {
         width: 30%;
         h3 {
             color: greenyellow;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
 
         }
 
@@ -25,8 +28,9 @@ footer {
             display: flex;
             flex-flow: column wrap;
             justify-content: flex-start;
+            color: grey;
             a {
-                color: white;
+                color: grey;
             }
             a:hover {
                 color: limegreen;
@@ -41,13 +45,13 @@ footer {
 
     .listittle2 {
         width: 30%;
-
     }
+       
         .recentposts {
             display: flex;
             flex-flow: column wrap;
             a {
-                color: white;
+                color: grey;
             }
             a:hover {
                 color: limegreen;
@@ -58,7 +62,6 @@ footer {
             }
         
         }
-
 }
 
 
@@ -74,4 +77,26 @@ footer {
 .subscribe form {
     padding-bottom: 10%;
     border-bottom: 4px solid grey; 
+}
+
+.subscribe {
+    color: grey;
+    width: 20%;
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        padding-bottom: 20px;
+        color: white;
+    }
+    form {
+        .footeremail {
+            width: 85%;
+            padding: 10px;
+        }
+        .subscribebutton {
+            color: white;
+            background: green;
+            border: none;
+        }
+    }
 }

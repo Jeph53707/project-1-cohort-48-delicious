@@ -12,17 +12,45 @@
         flex-flow: row wrap;
         margin: 0 auto;
         border-bottom: 2px solid #EEEEEE;
+        font-family: 'Lora',serif;
     }
 
-.pineappleh2 {
-    padding-top: 20px;
+    .pineappleh2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+        }
+
+        }
+        h2, h5 {
+            margin: 0;
+        }
+.tagsandshare {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
     padding-bottom: 20px;
- 
+    border-bottom: 2px solid #EEEEEE;
+    p {
+        width: 90%;
+        padding-left: 10px;
     }
-    h2, h5 {
-        margin: 0;
+   .iconlist2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-left: 20px;
+    color: grey;
+    a {
+        color:grey;
     }
-
+   }
+}
 
 
 .meetsallylucas {
@@ -31,8 +59,8 @@
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-top: 35px;
     .sallypic {
         display: flex;
         width: 18%;
@@ -43,7 +71,7 @@
         width: 100%;
         margin-left: 2%;
         background-color: #E0E0E0;
-        padding-top: 15px;
+        padding-top: 35px;
         padding-left: 40px;
         padding-right: 40px;
 
@@ -58,6 +86,10 @@
     margin:0 auto;
     border-top: 2px solid #EEEEEE;
     border-bottom: 2px solid #EEEEEE;
+    h3 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     ul {
         display: flex;
         justify-content: space-between;
@@ -91,6 +123,8 @@
        
     h3 {
         width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
         display: flex;
 
     }
@@ -106,7 +140,7 @@
         justify-content: space-between;
     }
     .silver {
-        width: 10%;
+        width: 9%;
         height: 50%
       
     }
@@ -125,7 +159,7 @@
     }
 
     .brunette {
-        width: 10%;
+        width: 9%;
         height: 50%;
       
     }
@@ -145,10 +179,6 @@
         justify-content: space-between;
         margin: 0;
         
-        h3 {
-            width: 100%;
-            margin: 0;
-        }
         h5 {
             width: 100%;
         }
