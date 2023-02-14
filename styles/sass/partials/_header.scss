@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    margin: 0 auto; 
+    background-repeat: no-repeat; 
+}
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.homebar {
+    gap: 20px;
+    display: flex;
+}
+.homeheader {
+    background-image: url(../assets/home-1.jpeg);
+    height: 100vh;
+    padding-top: .5%;
+}
+
+.blogheader {
+    background-image: url(../assets/blog-1.jpeg);
+    height: 50vh;
+    padding-top: .5%;
+}
+
+.contactheader {
+    height: 50vh;
+    background-image: url(../assets/contact-1.jpeg);
+    padding-top: .5%;
+}
+
+.navicon {
+    display:none;
+}

@@ -1,0 +1,47 @@
+.dropcontact{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    div {
+        width: 60%;
+    }
+    
+    h2
+
+    .dropus {
+        margin: 0 auto;
+        width: 60%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-end;
+        form {
+            width: 60%;
+        }
+        h2 {
+            text-align: left;
+            width: 60%;
+        }
+    }
+
+    .contactboard {
+        margin: 0 auto;
+        width: 40%;
+        display: flex;
+        background-color: #ECEFF1;
+        justify-content: flex-start;
+        padding: 4%;
+    
+       ul {
+        width: 60%;
+       }
+
+    }
+
+}
+.dragonfruit {
+    width: 100%;
+    background-image: url(../assets/contact-2.jpeg);
+    height: 66.4vh;
+
+}

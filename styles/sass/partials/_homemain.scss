@@ -1,0 +1,119 @@
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.restauraunts {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 10% 0;
+    
+    .wrapper {
+        display: flex;
+        height: 100%;
+        flex-flow: column wrap;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+        padding-bottom: 80px;
+    }
+    .homecircletext {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        top: -100px;
+        right: -100px;
+    }
+
+}
+
+
+
+.recipemenu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    
+
+    .popularrecipe {
+        display: flex;
+        width: 50%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      
+    }
+    figure {
+       
+        justify-content: center;
+        width: 50%;
+
+    }
+}
+
+
+
+.menuflexboard{
+    background-color: #ECEFF1;
+    display: flex;
+    width: 50%;
+    
+    justify-content: center;
+
+    .menuflex {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 70%;
+        align-items: center;
+        align-content: center;
+
+        li {
+            width: 50%;
+
+        }
+    }
+}
+
+
+
+.homegallery {
+    width: 100%;
+    height: 100%;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 33.33%;
+        }
+    }
+}
+
+
+.hungryclients {
+    height: 100%;
+    width: 100%;
+    background-color: #DDED9A;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6% 0;
+
+    .wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+        height: 100%;
+    }
+ 
+}

@@ -5,40 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeliciousHome</title>
-    <link rel="stylesheet" href="indexstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper h1flex">
+    <header class="homeheader">
+        <div class="mainheader">
             <h1>Delicious</h1>
+            <nav> 
+                <ul class="homebar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipe">Recipes</a></li>
+                    <li><a href="Nutrition.asp">Nutrition</a></li>
+                    <li><a href="Blog.asp">Blog</a></li>
+                    <li><a href="Shop.asp">Shop</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+                <i class="navicon fa-solid fa-bars"></i>
+            </nav>
         </div>
+    
     </header>
     <main>
-        <section class="popularrecipes">
-            <h2>Popular Recipes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi placeat iste porro fugiat repudiandae ipsum esse nemo impedit deleniti illum soluta assumenda consectetur optio beatae non quaerat, blanditiis exercitationem!</p>
-            <button type="button">VIEW RECIPES</button>
-        </section>
-        <section class="menu">
-            <ul class="wrapper menuflex">
-                <li>Vegetarian</li>
-                <li>Appetizers</li>
-                <li>Desserts</li>
-                <li>Drinks</li>
-                <li>Salads</li>
-                <li>Side Dishes</li>
-            </ul>
+        <section class="recipemenu" id="recipe">
+            <article class="popularrecipe">
+                <h2>Popular Recipes</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi placeat iste porro fugiat repudiandae ipsum esse nemo impedit deleniti illum soluta assumenda consectetur optio beatae non quaerat, blanditiis exercitationem!</p>
+                <button type="button">VIEW RECIPES</button>
+            </article>
+                
+            <figure>
+                <img src="./assets/home-2.jpeg">
+            </figure>
+            <figure>
+                <img src="./assets/home-3.jpeg">
+            </figure>
+            <article class="menuflexboard">
+                <ul class="menuflex">
+                    <li>
+                        <i class="fa-solid fa-lemon"></i>
+                        <h2>Vegetarian </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-utensils"></i>
+                        <h2>Appetizers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h2>Desserts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-martini-glass"></i>
+                        <h2>Drinks</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-leaf"></i>
+                        <h2>Salads</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, accusamus?</p>
+                
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-spoon"></i>
+                        <h2>Side Dishes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, suscipit.</p>
+                    </li>
+                </ul>
+            </article>
         </section>
 
         <section class="restauraunts">
-            <div class="wrapper">
-                <h2>Our Restauraunts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a rerum magni odit atque hic voluptas explicabo molestias velit?</p>
-            </div>
+            <figure class="wrapper">
+                <img src="./assets/home-4.jpeg">
+                <figure class="homecircletext">
+                    <img src="./assets/home-circle-text.png">
+                </figure>
+            </figure>
+
+            <h2>Our Restauraunts</h2>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a rerum magni odit atque hic voluptas explicabo molestias velit?</p>
         </section>
 
-        <section class="gallery">
-            <ul class="gallery gallerflex">
+        <section class="homegallery">
+            <ul>
                 <li><img src="./assets/home-5.jpeg"></li>
                 <li><img src="./assets/home-6.jpeg"></li>
                 <li><img src="./assets/home-7.jpeg"></li>
@@ -50,13 +110,55 @@
 
         
         <section class="hungryclients">
+            <!-- set a min-height and font awesome icons -->
             <div class="wrapper">
                 <h2>Hungry Clients</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut nesciunt quidem perferendis, atque necessitatibus, obcaecati cupiditate voluptate fuga architecto officiis? Esse vitae illum aliquid assumenda itaque excepturi officiis nemo!</p>
             </div>
         </section>
     </main>
-    </header>
+    <footer id="about">
+        <div class="footerboard">
+            <div class="listtitle1">
+                <h3>DELICIOUS</h3>
+                <ul class="deliciouslist" >
+                    <li>
+                        Soko raddichio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage 
+                    </li>
+                    <li>A delicious restaurant <br>
+                        Toronto, Ontario </li>
+                    <li><a href="yum@food.com">yum@food.com</a></li>
+                    <li>+1 234 567 8910</li>
+                </ul>
+            </div>
+
+            <div class="listtitle2">
+                <ul class="recentposts">
+                    <h3>Recent Posts</h3>
+                    <li><a href="beetroot.asp">Beetroot water spinach okra water</a></li>
+                    <li><a href="chestnut.asp">Chestnut ricebean pea catsear courgette</a></li>
+                    <li><a href="summer.asp">Summer purslane spinach arugula pea</a></li>
+                    <li><a href="tatsoi.asp">Tatsoi aubergine spring onion bush</a></li>
+                    <li><a href="tomato.asp">Tomato kale raddichio turnip chicory</a></li>
+                    <li><a href="Salsify.asp">Salsify pea sprouts fava bean</a></li>
+                </ul>
+            </div>
+            
+            <div class="subscribe">
+                <h3>Subscribe Now</h3>
+                <form>
+                    <label for="email">Get all of our newest recipes immeditely <br> in your inbox</label><br><br><br>
+                    <input type="text" id="email" placeholder="Enter your email"></input>
+                    </label>
+                </form>
+            </div> 
+        
+        </div>
+        <div class="copyright">
+            <h4>Copyrights @2015 by POLAR. All Rights Reserved</h4>
+        </div>
+    </footer>
     
 </body>
 </html>
