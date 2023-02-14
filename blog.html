@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -16,16 +17,17 @@
             <h1>Delicious</h1>
             <nav> 
                 <ul class="homebar">
-                    <li><a href="Home.asp">Home</a></li>
-                    <li><a href="About.asp">About</a></li>
-                    <li><a href="Recipes.asp">Recipes</a></li>
-                    <li><a href="Nutrition.asp">Nutrition</a></li>
-                    <li><a href="Blog.asp">Blog</a></li>
-                    <li><a href="Shop.asp">Shop</a></li>
-                    <li><a href="Contact">Contact</a></li>
-                    <li><i class="fa-solid fa-bag-shopping"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipe">Recipes</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
+                <i class="navicon fa-solid fa-bars"></i>
             </nav>
         </div>
     </header>
@@ -34,20 +36,41 @@
         <section class="pineapplechickenboard">
             <article class="pineapplechicken">
                 <div class="pineappleh2">
-                    <h2>Pineapple Chicken </h2>
+                    <h2>PINEAPPLE CHICKEN</h2>
                     <h5>Posted at July 11, 2018 | by Admin | in Recipes</h5>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorem. Itaque quibusdam voluptate culpa deserunt deleniti commodi est eligendi error adipisci dolore obcaecati repellendus maxime consequuntur magni nihil impedit blanditiis qui omnis recusandae, iusto sed suscipit dolor architecto atque? Nisi doloribus hic autem, soluta ipsam quaerat architecto? Asperiores, suscipit corporis.</p>
+                <p>Morbi et accumsan est, non convallis metus. Etiam fancuibus, leo et scelerisque facillisis, magna erat dictum nibh, vel congue tortor massa vitae magna. Magna erat dictum nibh, vel congue tortor massa vitae magna.
+                <br><br>
+                Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatosi tomatillo melon azuki bean garlic.
+                <br><br>
+                Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+                <br><br>
+                Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. 
+                <br><br>
+                Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prarie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut peak sierra leone bologi leek soko chicory celtuce parsley jicama salsify. 
+                </p>
+                
             </article>
 
         </section>
+        <section class="tagsandshare">
+            <h3>TAGS:</h3>
+            <p>Recipes, Chicken, Pinapple, Mexican</p>
+            <h3>SHARE:</h3>
+            <ul class="iconlist2">
+                <li><a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+           
+        </section>
 
-        <section class="meetsallylucas">          
+        <section class="meetsallylucas" id="about">          
             <figure class="sallypic">
                 <img src="./assets/blog-2.jpeg">
             </figure>
             <article class="sallytext">
-                <h3>Meet Sally Lucas</h3>
+                <h3>SALLY LUCAS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perspiciatis esse, ex doloribus eius rem accusamus beatae nisi corrupti aperiam.</p>
             </article>
         </section>
@@ -103,8 +126,9 @@
                 <h3>LEAVE A COMMENT</h3>
                 <h5>Your email address will not be published. Required fields are marked *</h5>
                 <form action="#" method="#" name="Leave Comment" class="leavecomment">
-                    <input class="upper" type="text" id="yourname" placeholder="Your Name">
-                    <input class="upper"type="text" id="youremail" placeholder="Your Email">
+                    <label for=</label>
+                    <input class="upper" type="text" id="yourname" placeholder="Name *" required>
+                    <input class="upper"type="text" id="youremail" placeholder="Your Email *" required>
                     <input class="upper" type="text" id="yourwebsite" placeholder="Your Website">
                     <textarea class="lower" type="text" id="leavecomment" placeholder="Comment"></textarea>
                     <button type="button">SUBMIT COMMENT</button>
@@ -130,7 +154,7 @@
 
         <div class="listtitle2">
             <ul class="recentposts">
-                <h3>Recent Posts</h3>
+                <h3>RECENT POSTS</h3>
                 <li><a href="beetroot.asp">Beetroot water spinach okra water</a></li>
                 <li><a href="chestnut.asp">Chestnut ricebean pea catsear courgette</a></li>
                 <li><a href="summer.asp">Summer purslane spinach arugula pea</a></li>
@@ -140,12 +164,17 @@
             </ul>
         </div>
         <div class="subscribe">
-            <h3>Subscribe Now</h3>
+            <h3>SUBSCRIBE NOW</h3>
             <form>
-                <label for="email">Get all of our newest recipes immeditely <br> in your inbox</label><br><br><br>
-                <input type="text" id="email" placeholder="Enter your email"></input>
+                <label for="email">Get all of our newest recipes immeditely in your inbox </label> <br><br>
+                <input class="footeremail"type="text" id="email" placeholder="Enter your email"></input>
                 </label>
+                <button class="subscribebutton" type="button"><i class="fa-solid fa-right-long"></i></button>
             </form>
+            <ul class="iconlist">
+                <li><i class="fa-li fa-brands fa-facebook-f fa-s" aria-hidden="true"></i></li>
+                <li><i class="fa-li fa-brands fa-twitter fa-s" aria-hidden="true"></i></li>
+            </ul>
         </div>
     </div>
     <div class="copyright">
