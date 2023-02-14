@@ -11,6 +11,7 @@
         display: flex;
         flex-flow: row wrap;
         margin: 0 auto;
+        border-bottom: 2px solid #EEEEEE;
     }
 
 .pineappleh2 {
@@ -31,6 +32,7 @@
     flex-flow: row nowrap;
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 30px;
     .sallypic {
         display: flex;
         width: 18%;
@@ -40,7 +42,7 @@
     .sallytext {
         width: 100%;
         margin-left: 2%;
-        background-color: #999999;
+        background-color: #E0E0E0;
         padding-top: 15px;
         padding-left: 40px;
         padding-right: 40px;
@@ -54,8 +56,8 @@
     width: 70%;
     height: 100%;
     margin:0 auto;
-    border-top: 4px solid #999999;
-    border-bottom: 4px solid #999999;
+    border-top: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
     ul {
         display: flex;
         justify-content: space-between;
@@ -90,7 +92,12 @@
     h3 {
         width: 100%;
         display: flex;
-        
+
+    }
+
+    h5 {
+        width: 100%;
+        display: flex;
     }
 
     .comments {
@@ -100,15 +107,18 @@
     }
     .silver {
         width: 10%;
-        height: 30%
+        height: 50%
       
     }
 
+    .comments {
+        margin-bottom: 30px;
+    }
+
     .avaro {
-        background-color: #999999;
+        background-color: #E0E0E0;
         width: 100%;
         margin-left: 30px;
-        margin-bottom: 30px;
         padding-left: 30px;
         padding-right: 30px;
 
@@ -116,15 +126,61 @@
 
     .brunette {
         width: 10%;
-        height: 45%;
+        height: 50%;
       
     }
 
     .hudson {
-        background-color: #999999;
+        background-color: #E0E0E0;
         width: 100%;
         margin-left: 30px;
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .leavecomment {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        
+        h3 {
+            width: 100%;
+            margin: 0;
+        }
+        h5 {
+            width: 100%;
+        }
+            .upper {
+                width: 31%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 1%;
+                border: 1px solid grey;
+               
+            }
+            .lower {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+                padding: 1%;
+                border: 1px solid grey;
+                color: black;
+            }
+        button {
+            background-color: #7CB342;
+            color: white;
+            padding: 20px;
+            border: none;
+          
+
+        }
+     
+    }
+    div {
+        width: 100%;
+        margin-bottom: 4%;
+    }
 }
+

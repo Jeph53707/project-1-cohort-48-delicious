@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -16,20 +17,23 @@
             <h1>Delicious</h1>
             <nav> 
                 <ul class="homebar">
-                    <li><a href="Home.asp">Home</a></li>
-                    <li><a href="About.asp">About</a></li>
-                    <li><a href="Recipes.asp">Recipes</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipe">Recipes</a></li>
                     <li><a href="Nutrition.asp">Nutrition</a></li>
                     <li><a href="Blog.asp">Blog</a></li>
                     <li><a href="Shop.asp">Shop</a></li>
                     <li><a href="Contact">Contact</a></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
                 </ul>
+                <i class="navicon fa-solid fa-bars"></i>
             </nav>
         </div>
     
     </header>
     <main>
-        <section class="recipemenu">
+        <section class="recipemenu" id="recipe">
             <article class="popularrecipe">
                 <h2>Popular Recipes</h2>
                 <hr>
@@ -46,27 +50,33 @@
             <article class="menuflexboard">
                 <ul class="menuflex">
                     <li>
+                        <i class="fa-solid fa-lemon"></i>
                         <h2>Vegetarian </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-utensils"></i>
                         <h2>Appetizers</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-mug-saucer"></i>
                         <h2>Desserts</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-martini-glass"></i>
                         <h2>Drinks</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, obcaecati.</p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-leaf"></i>
                         <h2>Salads</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, accusamus?</p>
                 
                     </li>
                     <li>
+                        <i class="fa-solid fa-spoon"></i>
                         <h2>Side Dishes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, suscipit.</p>
                     </li>
@@ -108,7 +118,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="about">
         <div class="footerboard">
             <div class="listtitle1">
                 <h3>DELICIOUS</h3>
@@ -118,7 +128,7 @@
                     </li>
                     <li>A delicious restaurant <br>
                         Toronto, Ontario </li>
-                    <li>yum@food.com</li>
+                    <li><a href="yum@food.com">yum@food.com</a></li>
                     <li>+1 234 567 8910</li>
                 </ul>
             </div>

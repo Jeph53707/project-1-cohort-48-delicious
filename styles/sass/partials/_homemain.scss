@@ -1,3 +1,39 @@
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.restauraunts {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 10% 0;
+    
+    .wrapper {
+        display: flex;
+        height: 100%;
+        flex-flow: column wrap;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+        padding-bottom: 80px;
+    }
+    .homecircletext {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        top: -100px;
+        right: -100px;
+    }
+
+}
 
 
 

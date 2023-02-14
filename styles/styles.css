@@ -273,6 +273,10 @@ header {
   padding-top: 0.5%;
 }
 
+.navicon {
+  display: none;
+}
+
 body {
   max-width: 1920px;
   font-size: 125%;
@@ -328,6 +332,59 @@ hr {
   border: 3px solid green;
   border-radius: 10px;
   width: 60px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.restauraunts {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+  margin: 10% 0;
+}
+.restauraunts .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-bottom: 80px;
+}
+.restauraunts .homecircletext {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: -100px;
+  right: -100px;
 }
 
 .recipemenu {
@@ -453,6 +510,7 @@ hr {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 0 auto;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .pineappleh2 {
@@ -476,6 +534,7 @@ h2, h5 {
           flex-flow: row nowrap;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .meetsallylucas .sallypic {
   display: -webkit-box;
@@ -489,7 +548,7 @@ h2, h5 {
 .meetsallylucas .sallytext {
   width: 100%;
   margin-left: 2%;
-  background-color: #999999;
+  background-color: #E0E0E0;
   padding-top: 15px;
   padding-left: 40px;
   padding-right: 40px;
@@ -499,8 +558,8 @@ h2, h5 {
   width: 70%;
   height: 100%;
   margin: 0 auto;
-  border-top: 4px solid #999999;
-  border-bottom: 4px solid #999999;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
 }
 .bloggalleryboard ul {
   display: -webkit-box;
@@ -547,6 +606,12 @@ h2, h5 {
   display: -ms-flexbox;
   display: flex;
 }
+.commentsboard h5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .commentsboard .comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,26 +623,74 @@ h2, h5 {
 }
 .commentsboard .silver {
   width: 10%;
-  height: 30%;
+  height: 50%;
+}
+.commentsboard .comments {
+  margin-bottom: 30px;
 }
 .commentsboard .avaro {
-  background-color: #999999;
+  background-color: #E0E0E0;
   width: 100%;
   margin-left: 30px;
-  margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 .commentsboard .brunette {
   width: 10%;
-  height: 45%;
+  height: 50%;
 }
 .commentsboard .hudson {
-  background-color: #999999;
+  background-color: #E0E0E0;
   width: 100%;
   margin-left: 30px;
   padding-left: 30px;
   padding-right: 30px;
+}
+.commentsboard .leavecomment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+.commentsboard .leavecomment h3 {
+  width: 100%;
+  margin: 0;
+}
+.commentsboard .leavecomment h5 {
+  width: 100%;
+}
+.commentsboard .leavecomment .upper {
+  width: 31%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1%;
+  border: 1px solid grey;
+}
+.commentsboard .leavecomment .lower {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 1%;
+  border: 1px solid grey;
+  color: black;
+}
+.commentsboard .leavecomment button {
+  background-color: #7CB342;
+  color: white;
+  padding: 20px;
+  border: none;
+}
+.commentsboard div {
+  width: 100%;
+  margin-bottom: 4%;
 }
 
 .dropcontact {
@@ -587,7 +700,10 @@ h2, h5 {
   width: 100%;
   margin: 0 auto;
 }
-.dropcontact .dropus {
+.dropcontact div {
+  width: 60%;
+}
+.dropcontact h2 .dropus {
   margin: 0 auto;
   width: 60%;
   display: -webkit-box;
@@ -604,10 +720,10 @@ h2, h5 {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.dropcontact .dropus form {
+.dropcontact h2 .dropus form {
   width: 60%;
 }
-.dropcontact .dropus h2 {
+.dropcontact h2 .dropus h2 {
   text-align: left;
   width: 60%;
 }
@@ -633,20 +749,6 @@ h2, h5 {
   height: 66.4vh;
 }
 
-@media (max-width: 960px) {
-  .homeheader {
-    height: 50vh;
-  }
-  .popularrecipe {
-    min-width: 400px;
-  }
-  .menuflexboard {
-    width: 400px;
-  }
-  figure {
-    min-width: 400px;
-  }
-}
 footer {
   background-color: black;
   display: -webkit-box;
@@ -742,55 +844,46 @@ footer {
   border-bottom: 4px solid grey;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1920px;
-  width: 100%;
+@media (max-width: 960px) {
+  .homeheader {
+    height: 50vh;
+  }
+  body {
+    font-size: 16px;
+  }
 }
-
-.restauraunts {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  text-align: center;
-  margin: 10% 0;
+@media (max-width: 636px) {
+  .popularrecipe {
+    min-width: 100%;
+  }
+  .menuflexboard {
+    min-width: 100%;
+  }
+  .hungryclients .wrapper {
+    width: 90%;
+  }
+  .footerboard {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footerboard .listtitle1 {
+    width: 100%;
+  }
+  .footerboard .listtitle1 .deliciouslist li {
+    padding: 5px 0;
+  }
+  .footerboard .listtitle2 {
+    width: 100%;
+  }
 }
-.restauraunts .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  width: 30%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  padding-bottom: 80px;
-}
-.restauraunts .homecircletext {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  top: -100px;
-  right: -100px;
+@media (max-width: 320px) {
+  .homeheader {
+    height: 40vh;
+  }
+  .homebar {
+    display: none;
+  }
+  .navicon {
+    display: inline-block;
+  }
 }

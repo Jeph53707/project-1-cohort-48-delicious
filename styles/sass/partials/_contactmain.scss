@@ -2,7 +2,11 @@
     display: flex;
     width: 100%;
     margin: 0 auto;
-  
+    div {
+        width: 60%;
+    }
+    
+    h2
 
     .dropus {
         margin: 0 auto;
@@ -27,6 +31,7 @@
         background-color: #ECEFF1;
         justify-content: flex-start;
         padding: 4%;
+    
        ul {
         width: 60%;
        }

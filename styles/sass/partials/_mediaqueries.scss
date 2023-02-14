@@ -2,15 +2,49 @@
     .homeheader {
         height: 50vh;
     }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 636px) {
+
     .popularrecipe {
-        min-width: 400px;
+        min-width: 100%;
     }
-
     .menuflexboard {
-        width: 400px; 
-        }
-    figure {
-        min-width: 400px;
+        min-width: 100%;
+    }
+    .hungryclients .wrapper {
+        width: 90%;
     }
 
+    .footerboard {
+        flex-wrap: wrap;
+    }
+    .footerboard {
+        .listtitle1 {
+            width: 100%;
+            .deliciouslist li {
+                padding: 5px 0;
+            }
+        }
+        .listtitle2 {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+    .homeheader {
+        height: 40vh;
+    }
+    .homebar {
+        display: none;
+    }
+    .navicon {
+        display: inline-block;
+    }
 }
