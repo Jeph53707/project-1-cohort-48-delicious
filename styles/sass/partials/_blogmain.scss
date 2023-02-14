@@ -14,15 +14,33 @@
         border-bottom: 2px solid #EEEEEE;
     }
 
-.pineappleh2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
- 
+    .pineappleh2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        }
+        h2, h5 {
+            margin: 0;
+        }
+.tagsandshare {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    p {
+        width: 90%;
+        padding-left: 10px;
     }
-    h2, h5 {
-        margin: 0;
-    }
-
+   .iconlist2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-left: 20px;
+    color: grey;
+   }
+}
 
 
 .meetsallylucas {
@@ -91,6 +109,7 @@
        
     h3 {
         width: 100%;
+        margin-bottom: 10px;
         display: flex;
 
     }
@@ -145,10 +164,6 @@
         justify-content: space-between;
         margin: 0;
         
-        h3 {
-            width: 100%;
-            margin: 0;
-        }
         h5 {
             width: 100%;
         }

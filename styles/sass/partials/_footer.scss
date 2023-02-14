@@ -9,10 +9,11 @@ footer {
 .footerboard {
     display: flex;
     margin: 0 auto;
-    width: 85%;
+    width: 70%;
     color: white;
     justify-content: space-between;
     padding-bottom: 50px;
+    padding-top: 50px;
 
     .listtitle1 {
         width: 30%;
@@ -74,4 +75,19 @@ footer {
 .subscribe form {
     padding-bottom: 10%;
     border-bottom: 4px solid grey; 
+}
+
+.subscribe {
+    width: 20%;
+    form {
+        .footeremail {
+            width: 85%;
+            padding: 10px;
+        }
+        .subscribebutton {
+            color: white;
+            background: green;
+            border: none;
+        }
+    }
 }

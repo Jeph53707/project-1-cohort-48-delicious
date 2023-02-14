@@ -318,6 +318,14 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
 h4 {
   color: white;
   display: -webkit-box;
@@ -415,6 +423,9 @@ hr {
           align-items: center;
   text-align: center;
 }
+.recipemenu .popularrecipe p {
+  width: 70%;
+}
 .recipemenu figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -423,7 +434,7 @@ hr {
 }
 
 .menuflexboard {
-  background-color: #ECEFF1;
+  background-color: #E0E0E0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,6 +463,14 @@ hr {
 }
 .menuflexboard .menuflex li {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 150px;
+}
+.menuflexboard .menuflex li i {
+  padding-right: 3%;
+  padding-top: 3%;
 }
 
 .homegallery {
@@ -488,6 +507,28 @@ hr {
   width: 50%;
   height: 100%;
 }
+.hungryclients .wrapper .quotebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #F5F5F5;
+}
+.hungryclients .wrapper .quotebox p {
+  color: black;
+}
+.hungryclients .wrapper .arrows {
+  padding-top: 10px;
+  color: #F5F5F5;
+}
+
+.iconlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: white;
+}
 
 .pineapplechickenboard {
   height: 100%;
@@ -520,6 +561,40 @@ hr {
 
 h2, h5 {
   margin: 0;
+}
+
+.tagsandshare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 70%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.tagsandshare p {
+  width: 90%;
+  padding-left: 10px;
+}
+.tagsandshare .iconlist2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 20px;
+  padding-left: 20px;
+  color: grey;
 }
 
 .meetsallylucas {
@@ -602,6 +677,7 @@ h2, h5 {
 }
 .commentsboard h3 {
   width: 100%;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,10 +734,6 @@ h2, h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-}
-.commentsboard .leavecomment h3 {
-  width: 100%;
   margin: 0;
 }
 .commentsboard .leavecomment h5 {
@@ -768,12 +840,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 85%;
+  width: 70%;
   color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .footerboard .listtitle1 {
   width: 30%;
@@ -844,6 +917,19 @@ footer {
   border-bottom: 4px solid grey;
 }
 
+.subscribe {
+  width: 20%;
+}
+.subscribe form .footeremail {
+  width: 85%;
+  padding: 10px;
+}
+.subscribe form .subscribebutton {
+  color: white;
+  background: green;
+  border: none;
+}
+
 @media (max-width: 960px) {
   .homeheader {
     height: 50vh;
@@ -875,8 +961,17 @@ footer {
   .footerboard .listtitle2 {
     width: 100%;
   }
+  .footerboard .subscribe {
+    width: 100%;
+  }
+  .footerboard .subscribe form .footeremail {
+    width: 50%;
+  }
 }
 @media (max-width: 320px) {
+  .recipemenu figure {
+    min-width: 320px;
+  }
   .homeheader {
     height: 40vh;
   }
@@ -885,5 +980,11 @@ footer {
   }
   .navicon {
     display: inline-block;
+  }
+  .menuflexboard {
+    width: 100%;
+  }
+  .menuflexboard .menuflex li {
+    width: 100%;
   }
 }

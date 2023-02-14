@@ -52,6 +52,9 @@
         align-content: center;
         align-items: center;
         text-align: center;
+        p {
+            width: 70%;
+        }
       
     }
     figure {
@@ -65,7 +68,7 @@
 
 
 .menuflexboard{
-    background-color: #ECEFF1;
+    background-color:#E0E0E0;
     display: flex;
     width: 50%;
     
@@ -81,7 +84,12 @@
 
         li {
             width: 50%;
-
+            display: flex;
+            min-width: 150px;
+            i {
+                padding-right: 3%;
+                padding-top: 3%;
+            }
         }
     }
 }
@@ -114,6 +122,24 @@
         flex-flow: column wrap;
         width: 50%;
         height: 100%;
+        .quotebox {
+            display: flex;
+            width: 100%;
+            color:#F5F5F5;
+            p {
+                color: black;
+            }
+        }
+    .arrows {
+        padding-top: 10px;
+        color: #F5F5F5
+        }
     }
  
 }
+
+.iconlist {
+    display: flex;
+    width: 100%;
+    color: white;
+    }
