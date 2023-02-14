@@ -14,7 +14,7 @@
 <body>
     <header class="contactheader">
         <div class="mainheader">
-            <h1>Delicious</h1>
+            <h1>DELICIOUS</h1>
             <nav> 
                 <ul class="homebar">
                     <li><a href="Home.asp">Home</a></li>
@@ -24,8 +24,8 @@
                     <li><a href="Blog.asp">Blog</a></li>
                     <li><a href="Shop.asp">Shop</a></li>
                     <li><a href="Contact">Contact</a></li>
-                    <li><i class="fa-solid fa-bag-shopping"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -33,14 +33,19 @@
 
     <main> 
         <section class="dropcontact">
-            <div>
+            <div class="dropus">
                 <h2>DROP US A LINE</h2>
-                <form class="dropus">
-                    <label for="yourname"></label>
-                    <input type="text" id="yourname" placeholder="Your Name">
-                    <label for="youremail"></label>
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="name">
+                <form>
+                    <label for="yourname" class="sr-only"></label>
+                    <input class="upper" type="text" id="yourname" placeholder="Name *" Required>
+                    <label for="youremail" class="sr-only"></label>
+                    <input class="upper" type="text" id="youremail" placeholder="Your Email *" required>
+                    <label for="subject" class="sr-only"></label>
+                    <input class="middle" type="text" id="subject" placeholder="Subject">
+
+                    <textarea class="lower" type="text" id="message" placeholder="Message"></textarea>
+                    <button type="button">SEND MESSAGE<i class="fa-solid fa-arrow-right"></i></button>
+
                 </form>   
             </div>
             <div class="contactboard">
@@ -49,12 +54,17 @@
                         <h2>CONTACT DETAILS</h2>
                         <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsol aubergine spring onion bush tomato kale.</p>
                     </li>
+                    <br><br><br>
                     <li>
                         <h3>WORKING HOURS</h3>
+                        <br>
                         MON - FRI : 08:00am - 05:30pm <br>
                         Not working on Saturday and Sunday !
                     </li>
+            
+                        <br><br><br>
                         <h3>CONTACT INFO</h3>
+                        <br>
                         A delicious restaurant <br>
                         Toronto, Ontario <br><br>
                         yum@food.com <br><br>
@@ -99,6 +109,7 @@
                     <label for="email">Get all of our newest recipes immeditely <br> in your inbox</label><br><br><br>
                     <input type="text" id="email" placeholder="Enter your email"></input>
                     </label>
+                    <button class="subscribebutton" type="button"><i class="fa-solid fa-right-long"></i></button>
                 </form>
             </div>
         </div>

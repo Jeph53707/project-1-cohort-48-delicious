@@ -4,9 +4,12 @@
     }
 
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
+
+
+
 
 @media (max-width: 636px) {
 
@@ -46,23 +49,17 @@
 }
 
 
-@media (max-width:638px) {
-    .menuflexboard {
-        // width: 100%;
-        // // .menuflex {
-        // //     li {
-        // // //         width: 100%;
-        // // //     }
-        // // // }
-    }
-
-}
 
 @media (max-width: 320px) {
     .recipemenu {
         figure {
             min-width:320px;
         }
+    }
+
+    .homecircletext {
+        height: 100px;
+        width: 100px;
     }
     .homeheader {
         height: 40vh;
@@ -80,6 +77,10 @@
                 width: 100%;
             }
         }
+    }
+
+    .pineapplechickenboard {
+        font-size: .7rem;
     }
 
 }
