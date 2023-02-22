@@ -44,7 +44,12 @@
                     <input class="middle" type="text" id="subject" placeholder="Subject">
 
                     <textarea class="lower" type="text" id="message" placeholder="Message"></textarea>
-                    <button type="button">SEND MESSAGE<i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" id="contactsubmit" onClick="openPopup()">SEND MESSAGE<i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="contactpopup" id="popup">
+                        <h3>Thank you for the line!</h3>
+                        <p>Your message has been sent.</p>
+                        <button type="button" onClick="closePopup()">OK</button>
+                    </div>
 
                 </form>   
             </div>
@@ -118,5 +123,6 @@
         </div>
        
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

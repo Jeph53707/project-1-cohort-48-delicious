@@ -19,8 +19,23 @@
                 color: green;
                 background-color: white;
                 border: none;
+                cursor: pointer;
             
             }
+            .contactpopup {
+                width: 400px;
+                background: #F5F5F5;
+                border-radius: 10px;
+                position: absolute;
+                // transform: translate(-50%, -50%);
+                text-align: center;
+                visibility: hidden;
+                transition: 4000ms;
+            }
+            .open-popup {
+                visibility: visible;
+            }
+          
         }
 
 

@@ -843,6 +843,20 @@ h2, h5 {
   color: green;
   background-color: white;
   border: none;
+  cursor: pointer;
+}
+.dropcontact .dropus form .contactpopup {
+  width: 400px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  -webkit-transition: 4000ms;
+  transition: 4000ms;
+}
+.dropcontact .dropus form .open-popup {
+  visibility: visible;
 }
 .dropcontact .dropus .upper {
   width: 30%;

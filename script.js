@@ -1,4 +1,22 @@
-//Pseudo Code for button color change when clicked and comment submission 
+//Pseudo Code for pop-up on button submission for Contact.html 
+//User clicks the submit button to send a message, which will prompt a pop-up modal thanking them for the message
+const contactpopup = document.getElementById('popup');
+
+function handleSubmit(event) {
+    event.preventDefault();
+}
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+
+
+//Pseudo Code for button comment submission on blog.html
 
 //User sees the comment board form on blog.html page 
 //User clicks the submit button after they fill out form 
