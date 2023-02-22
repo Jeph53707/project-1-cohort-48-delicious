@@ -767,7 +767,7 @@ h2, h5 {
   padding-left: 30px;
   padding-right: 30px;
 }
-.commentsboard .leavecomment {
+.commentsboard .leaveComment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,17 +781,17 @@ h2, h5 {
           justify-content: space-between;
   margin: 0;
 }
-.commentsboard .leavecomment h5 {
+.commentsboard .leaveComment h5 {
   width: 100%;
 }
-.commentsboard .leavecomment .upper {
+.commentsboard .leaveComment .upper {
   width: 31%;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 1%;
   border: 1px solid grey;
 }
-.commentsboard .leavecomment .lower {
+.commentsboard .leaveComment .lower {
   width: 100%;
   height: 200px;
   margin-bottom: 10px;
@@ -799,7 +799,7 @@ h2, h5 {
   border: 1px solid grey;
   color: black;
 }
-.commentsboard .leavecomment button {
+.commentsboard .leaveComment button {
   background-color: #7CB342;
   color: white;
   padding: 20px;

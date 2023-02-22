@@ -125,14 +125,22 @@
             <div>
                 <h3>LEAVE A COMMENT</h3>
                 <h5>Your email address will not be published. Required fields are marked *</h5>
-                <form action="#" method="#" name="Leave Comment" class="leavecomment">
-                    <input class="upper" type="text" id="yourname" placeholder="Name *" required>
-                    <input class="upper"type="text" id="youremail" placeholder="Your Email *" required>
-                    <input class="upper" type="text" id="yourwebsite" placeholder="Your Website">
-                    <textarea class="lower" type="text" id="leavecomment" placeholder="Comment"></textarea>
-                    <button type="button">SUBMIT COMMENT</button>
+                <form action="" method="" name="Leave Comment" class="leaveComment">
+                    <label for="yourName" class="sr-only"></label>
+                    <input class="upper" type="text" id="yourName" placeholder="Name *" required>
+                    <label for="yourEmail" class="sr-only"></label>
+                    <input class="upper"type="text" id="yourEmail" placeholder="Your Email *" required>
+                    <label for="yourWebsite" class="sr-only"></label>
+                    <input class="upper" type="text" id="yourWebsite" placeholder="Your Website">
+                    <label for="yourComments" class="sr-only"></label>
+                    <textarea class="lower" type="text" id="yourComments" placeholder="Comment"></textarea>
+                    <button class="commentButton" type="submit">SUBMIT COMMENT</button>
                 </form>
             </div>   
+
+            <div class="comments">
+            <!-- JavaScript to add new comment -->
+            </div>
         </section>
 
    </main>
@@ -180,6 +188,6 @@
         <h4>Copyrights @2015 by POLAR. All Rights Reserved</h4>
     </div>
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 </html>
