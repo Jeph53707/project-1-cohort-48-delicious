@@ -1,19 +1,25 @@
 //Pseudo Code for pop-up on button submission for Contact.html 
 //User clicks the submit button to send a message, which will prompt a pop-up modal thanking them for the message
+
+const contactform = document.getElementById('contactform')
+
 const contactpopup = document.getElementById('popup');
+
+const contactbutton = document.getElementById('contactbutton')
 
 function handleSubmit(event) {
     event.preventDefault();
-}
-
-function openPopup() {
     popup.classList.add("open-popup");
 }
 
-function closePopup(){
-    popup.classList.remove("open-popup");
-}
+contactform.addEventListener('submit', handleSubmit);
+function removePopup(event) {
+    if (event.target.id === "contactbutton") {
+        popup.classList.remove("open-popup");
+    }
 
+}
+contactform.addEventListener('click', removePopup);
 
 
 //Pseudo Code for button comment submission on blog.html

@@ -35,7 +35,7 @@
         <section class="dropcontact">
             <div class="dropus">
                 <h2>DROP US A LINE</h2>
-                <form>
+                <form id="contactform">
                     <label for="yourname" class="sr-only"></label>
                     <input class="upper" type="text" id="yourname" placeholder="Name *" Required>
                     <label for="youremail" class="sr-only"></label>
@@ -44,11 +44,11 @@
                     <input class="middle" type="text" id="subject" placeholder="Subject">
 
                     <textarea class="lower" type="text" id="message" placeholder="Message"></textarea>
-                    <button type="submit" id="contactsubmit" onClick="openPopup()">SEND MESSAGE<i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" id="contactsubmit">SEND MESSAGE<i class="fa-solid fa-arrow-right"></i></button>
                     <div class="contactpopup" id="popup">
                         <h3>Thank you for the line!</h3>
                         <p>Your message has been sent.</p>
-                        <button type="button" onClick="closePopup()">OK</button>
+                        <button type="submit" id="contactbutton">OK</button>
                     </div>
 
                 </form>   
